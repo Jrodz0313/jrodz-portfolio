@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+  }
+  
+  header {
+    padding: 40px;
+    text-align: center;
+    background: #13293d;
+    color: #fff;
+  }
+  
+  h1 {
+    font-size: 300%;
+  }
+  
+  nav {
+    display: flex;
+    background-color: #d8a47f;
+    justify-content: center;
+    font-size: 120%;
+  }
+  
+  nav a {
+    color: #13293d;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  .bigger {
+    font-size: 120%;
+  }
+  
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px
+  }
+  
+  aside {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    margin: auto;
+  }
+  
+  .avatar {
+    background-color: #13293d;
+  } 
+  
+  .avatar img {
+    background-color: #13293d;
+    border-radius: 50%;
+    width: 25%;
+  }
+  
+  section {
+    flex: 3;
+    background-color: #fff;
+    padding: 20px;
+    border-left: 5px solid #13293d;
+  }
+  
+  .project-section {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+  }
+  
+  #feature {
+    flex-grow: 3;
+  }
+  .polaroid {
+    width: 20%;
+    background-color: white;
+    box-shadow: 5px 5px 5px #7a7a7a
+  }
+  
+  figcaption{
+    text-align: center;
+    padding: 10px 20px;
+  }
+  .polaroid-title {
+    font-size: larger;
+  }
+  
+  .polaroid:hover,
+  .polaroid:hover .project-title {
+    box-shadow: inset 5px 5px 5px rgb(255, 198, 27), 5px 5px 5px rgb(81, 129, 180);
+  }
+  
+  footer {
+    padding: 20px;
+    text-align: center;
+    background: #13293d;
+    color: #fff;
+  }
+  
+  @media screen and (max-width: 768px) {
+    /* Use flex-direction to stack the navbar, sidebar, and body */
+    div,
+    nav {
+      flex-direction: column;
+    }
+    /* Make the sidebar stack below the body */
+    section {
+      order: 2;
+    }
+  }
+  
