@@ -1,3 +1,8 @@
+/* added css variable for the darker colors to help with easier chaning if I want to go back and changed the color */
+:root {
+--darker: #13293d;
+}
+
 * {
     box-sizing: border-box;
   }
@@ -10,7 +15,7 @@
   header {
     padding: 40px;
     text-align: center;
-    background: #13293d;
+    background: var(--darker);
     color: #fff;
   }
   
@@ -26,7 +31,7 @@
   }
   
   nav a {
-    color: #13293d;
+    color: var(--darker);
     padding: 14px 20px;
     text-decoration: none;
     text-align: center;
@@ -50,11 +55,11 @@
   }
   
   .avatar {
-    background-color: #13293d;
+    background-color: var(--darker);
   } 
   
   .avatar img {
-    background-color: #13293d;
+    background-color: var(--darker);
     border-radius: 50%;
     width: 25%;
   }
@@ -63,7 +68,7 @@
     flex: 3;
     background-color: #fff;
     padding: 20px;
-    border-left: 5px solid #13293d;
+    border-left: 5px solid var(--darker);
   }
   
   .project-section {
@@ -97,17 +102,17 @@
   footer {
     padding: 20px;
     text-align: center;
-    background: #13293d;
+    background: var(--darker);
     color: #fff;
   }
   
   @media screen and (max-width: 768px) {
-    /* Use flex-direction to stack the navbar, sidebar, and body */
+    /* Used flex-direction to stack the navbar, sidebar, and body */
     div,
     nav {
       flex-direction: column;
     }
-    /* Make the sidebar stack below the body */
+    /* Made the sidebar stack below the body */
     section {
       order: 2;
     }
