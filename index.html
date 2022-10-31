@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jasiah Rodriguez Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+
+    <!-- created a header to contain avatar image, name, and pronunciation of my name-->
+    <header>
+      <aside class="avatar">
+        <img src="./assets/css/images/avatar.jpg" alt="avatar img">
+      </aside>
+      <h1>Jasiah Rodriguez</h1>
+      <p>pronunciation: "jah-zay-uh"</p>
+    </header>
+
+    <!-- used a nav section to navigate through the different sections of the page -->
+    <nav>
+      <a href="#aboutme">About Me</a>
+      <a href="#work">Work</a>
+      <a href="#contactme">Contact Me</a>
+    </nav>
+
+    <!-- created 3 div containers to hold each section mentioned in the nav bar -->
+    <div id="aboutme">
+      <!-- used the aside tag to place the nav titles next to each section for clearer html semantics -->
+      <aside>
+        <h2>About Me</h2>
+      </aside>
+
+      <section>
+        <p class="bigger">
+          My name is Jasiah Rodriguez. I am currently in a coding bootcamp learning how to be a fullstack web developer. I come from a background in human services and have my B.A. in Family Science and Human Development. I am interested in merging my passion for humans and my emerging knowledge on tech to create a more equitable and accesible world.
+        </p>
+        <p class="bigger">
+          Below are some of my most recent projects. If you click on the gradient image, you will be able to sent to the deployed web application.
+        </p>
+      </section>
+    </div>
+
+    <div id="work">
+      <aside>
+        <h2>Work</h2>
+      </aside>
+
+      <section style="width:100%" class="project-section">
+        <!-- used the figure tags to contain all html to then create polaroid like images in css-->
+        <figure id="feature" class="polaroid">
+          <a href="https://jrodz0313.github.io/Prework-study-guide/">
+            <img src="./assets/css/images/gradient.jpg" alt="rainbow gradient img" width="100%">
+          </a>
+          <figcaption>
+            <p class="polaroid-title">Prework Study Guide</p>
+            <p>Using: HTML/CSS/Javascript</p>
+          </figcaption>
+        </figure>
+
+        <figure class="polaroid">
+          <a href="https://github.com/Jrodz0313/refactor-html-css.git">
+            <img src="./assets/css/images/gradient.jpg" alt="rainbow gradient img" width="100%">
+          </a>
+            <figcaption>
+            <p class="polaroid-title">Refactoring</p>
+            <p>Using: HTML/CSS</p>
+          </figcaption>
+        </figure>
+
+        <figure class="polaroid">
+          <img src="./assets/css/images/gradient.jpg" alt="rainbow gradient img" width="100%">
+          <figcaption>
+            <p class="polaroid-title">Password Generator</p>
+            <p><em>In the making</em></p>
+          </figcaption>
+        </figure>
+
+        <figure class="polaroid">
+          <img src="./assets/css/images/gradient.jpg" alt="rainbow gradient img" width="100%">
+          <figcaption>
+            <p class="polaroid-title">Project 4</p>
+            <p><em>In the making</em></p>
+          </figcaption>
+        </figure>
+
+      </section>
+    </div>
+
+   <div id="contactme">
+    <aside>
+      <h2>Contact Me</h2>
+    </aside>
+    <section>
+      <nav>
+        <a href="https://github.com/Jrodz0313">Github</a>
+        <a href="https://www.linkedin.com/in/jasiah-rodriguez/">LinkedIn</a>
+      </nav>
+    </section>
+   </div>
+
+   <!-- lastly used the footer tag to follow html semantics -->
+    <footer>
+      <h3>
+        by Jasiah Rodriguez
+      </h3>
+    </footer>
+  </body>
+</html>
